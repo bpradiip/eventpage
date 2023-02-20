@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Page</title>
+    <style>
+      /* Add styles for header, footer, and main content area */
+      header {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      main {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><b><u><u>KP Oli Cup Football - 2023</u></u></b></h1>
+    </header>
+    <main>
+      <p><i>Dates</i>: <b>11th Falgun 2079</b></p>
+      <p><i>Time</i>: <b>10:00 AM</b></p>
+      <p><i>Location</i>: <b>Chyasal Stadium, Dasharath Stadium & ANFA Complex.</b></p>
+      <p><i>Prize</i>: <b> Winner--NRs.10 Lakhs, Runner Up--NRs.5 lakhs</p>
+      <script>
+        // Add JavaScript to display countdown timer
+        var countDownDate = new Date("Jan 31, 2023 19:00:00").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+        <p><i>Event Details</i>:</p>
+      <p><i>"KP Oli Cup 2023" is a knockout football tournament going to be organized on the auspicious 71st birthday of the former Prime Minister, CPN UML Chairman & the real Hero of Nepali Politics, KP Sharma Oli.The main objective of the KP Oli Cup is to contribute to the commercial promotion of Nepali football and through this to inspire ordinary citizens, associations and political parties, said Kiran Paudel, the chairman of the organizing National Youth Association. The All Nepal Football Association ANFA has listed the KP Oli Cup 2023 as one of the domestic football competitions marking a date of Falgun 11-17 ahead of Martyr's Memorial A Division League 2079/80.In the contrary of no footballing activities, it's a better opportunity for the players & even the clubs to have such competition ahead of the top tier Martyr's Memorial A Division League 2079/80. Since ANFA doesn't seem responsible in the organization of such big football events, even the political parties are initiating for the footballing events.</i></p>
+    </main>
+    <footer>
+      <p>Copyright &copy; <b>Pradip Banjara</b> 2023</p>
+    </footer>
+  </body>
+</html>
